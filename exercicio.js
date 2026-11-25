@@ -72,12 +72,15 @@
    const validacaoValorCodigo = validacaoCadastro.codigoFormulario == validacaoCadastro.codigoRegistroBanco;
    const validacaoTipoCodigo = validacaoCadastro.codigoFormulario === validacaoCadastro.codigoRegistroBanco;
    const validacaoTipoDigitado = validacaoCadastro.codigoFormulario === validacaoCadastro.codigoRegistroBanco;
+   const saldoCliente = validacaoCadastro.valorCompra >= validacaoCadastro.saldoDisponivel;
+
    
 
    console.log("O cliente atingiu a maioridade civil: " + maiorIdade);
    console.log("O código digitado confere com o banco considerando apenas o valor: " + validacaoValorCodigo);
    console.log("O código digitado confere com o banco considerando valor e tipo de dado: " + validacaoTipoCodigo);
    console.log("O tipo do dado digitado difere do tipo esperado no banco: " + validacaoTipoDigitado);
+   console.log("O saldo do cliente cobre o valor da compra: " + saldoCliente);
 
 
 
