@@ -102,3 +102,19 @@
    3. Acesso à área VIP: liberado para assinantes premium, ou para compras a
       partir de 300 reais que possuam cupom promocional.
    ========================================================================== */
+
+   const valorCompra = 220;
+   const clientePremium = false;
+   const cupomPromocional = true;
+   const restricaoEntrega = false;
+   const clienteEstudante = true;
+   const idade = 22;
+
+   const freteGratis = valorCompra >= 200 && restricaoEntrega;
+   const descontoUniversitario = idade <= 29 && idade >= 18
+   const acessoAreaVip = clientePremium == true || valorCompra >= 300 && cupomPromocional == true;
+
+   console.log("Frete grátis: " + freteGratis);
+   console.log("Desconto universitário: " + descontoUniversitario);
+   console.log("Acesso à área VIP: " + acessoAreaVip);
+
